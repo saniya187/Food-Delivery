@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Foodie Express delivers delicious food fast with premium burgers, pizzas, noodles, and more."
+    />
+    <title>Foodie Express | Fast Food Delivery</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="preloader" aria-label="Loading">
+      <div class="loader"></div>
+    </div>
+
+    <header class="site-header">
+      <nav class="navbar container">
+        <a class="logo" href="#home"><span>🍔</span>Foodie Express</a>
+        <button class="menu-toggle" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+        <div class="nav-links">
+          <a href="#home">Home</a>
+          <a href="#menu">Menu</a>
+          <a href="#offers">Offers</a>
+          <a href="#reviews">Reviews</a>
+          <a href="#contact">Contact</a>
+          <div class="nav-actions">
+            <label class="search-box" aria-label="Search menu">
+              <i class="fas fa-search"></i>
+              <input id="searchInput" type="text" placeholder="Search food..." />
+            </label>
+            <a class="btn btn-primary" href="#contact">Order Now</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main id="home">
+      <section class="hero container">
+        <div class="hero-content reveal">
+          <p class="eyebrow">Freshly prepared • Fast delivery</p>
+          <h1>Delicious Food Delivered to Your Door in Minutes</h1>
+          <p>
+            Crave-worthy burgers, sizzling pizzas, comforting noodles, and refreshing drinks delivered hot and fast.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary ripple" href="#contact">Order Now</a>
+            <a class="btn btn-secondary ripple" href="#menu">View Menu</a>
+          </div>
+          <div class="hero-stats">
+            <div>
+              <strong class="counter" data-target="25000">0</strong>
+              <span>Happy customers</span>
+            </div>
+            <div>
+              <strong class="counter" data-target="30">0</strong>
+              <span>Minutes average</span>
+            </div>
+            <div>
+              <strong class="counter" data-target="4.9">0</strong>
+              <span>Rating</span>
+            </div>
+          </div>
+        </div>
+        <div class="hero-visual reveal">
+          <div class="orb orb-one"></div>
+          <div class="orb orb-two"></div>
+          <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=900&q=80" alt="Stacked burger and fries" />
+          <div class="floating-card card-top">
+            <i class="fas fa-fire"></i>
+            <span>Hot & crispy</span>
+          </div>
+          <div class="floating-card card-bottom">
+            <i class="fas fa-truck-fast"></i>
+            <span>Fast delivery</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="categories container reveal" id="menu">
+        <div class="section-heading">
+          <p class="eyebrow">Popular categories</p>
+          <h2>Choose what you’re craving</h2>
+        </div>
+        <div class="category-grid">
+          <article class="category-card"><i class="fas fa-pizza-slice"></i><h3>Pizza</h3></article>
+          <article class="category-card"><i class="fas fa-hamburger"></i><h3>Burger</h3></article>
+          <article class="category-card"><i class="fas fa-utensils"></i><h3>Fast Food</h3></article>
+          <article class="category-card"><i class="fas fa-drumstick-bite"></i><h3>Chicken</h3></article>
+          <article class="category-card"><i class="fas fa-bowl-food"></i><h3>Noodles</h3></article>
+          <article class="category-card"><i class="fas fa-mug-saucer"></i><h3>Drinks</h3></article>
+        </div>
+      </section>
+
+      <section class="popular-dishes container reveal">
+        <div class="section-heading">
+          <p class="eyebrow">Popular dishes</p>
+          <h2>Premium meals crafted for your taste</h2>
+        </div>
+        <div class="filter-bar">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="pizza">Pizza</button>
+          <button class="filter-btn" data-filter="burger">Burger</button>
+          <button class="filter-btn" data-filter="noodles">Noodles</button>
+          <button class="filter-btn" data-filter="drinks">Drinks</button>
+        </div>
+        <div class="dish-grid">
+          <article class="dish-card" data-category="pizza">
+            <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=900&q=80" alt="Pepperoni pizza" loading="lazy" />
+            <div class="dish-content">
+              <div class="dish-topline">
+                <h3>Supreme Pizza</h3>
+                <span>$14.90</span>
+              </div>
+              <p>Loaded with pepperoni, herbs, and melted mozzarella.</p>
+              <div class="dish-meta">
+                <div class="stars">★★★★★</div>
+                <button class="add-btn ripple">Add to Cart</button>
+              </div>
+            </div>
+          </article>
+          <article class="dish-card" data-category="burger">
+            <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=900&q=80" alt="Classic burger" loading="lazy" />
+            <div class="dish-content">
+              <div class="dish-topline">
+                <h3>Classic Smash</h3>
+                <span>$9.50</span>
+              </div>
+              <p>Double patty with cheddar, onions, and tangy sauce.</p>
+              <div class="dish-meta">
+                <div class="stars">★★★★★</div>
+                <button class="add-btn ripple">Add to Cart</button>
+              </div>
+            </div>
+          </article>
+          <article class="dish-card" data-category="noodles">
+            <img src="https://images.unsplash.com/photo-1557872943-16a5ac26437e?auto=format&fit=crop&w=900&q=80" alt="Spicy noodles" loading="lazy" />
+            <div class="dish-content">
+              <div class="dish-topline">
+                <h3>Spicy Noodles</h3>
+                <span>$11.20</span>
+              </div>
+              <p>Wok-tossed noodles with vegetables and house spice.</p>
+              <div class="dish-meta">
+                <div class="stars">★★★★★</div>
+                <button class="add-btn ripple">Add to Cart</button>
+              </div>
+            </div>
+          </article>
+          <article class="dish-card" data-category="pizza">
+            <img src="https://images.unsplash.com/photo-1541745537411-b8046dc6d66c?auto=format&fit=crop&w=900&q=80" alt="Veggie pizza" loading="lazy" />
+            <div class="dish-content">
+              <div class="dish-topline">
+                <h3>Veggie Delight</h3>
+                <span>$12.40</span>
+              </div>
+              <p>Garden fresh vegetables on a crisp golden crust.</p>
+              <div class="dish-meta">
+                <div class="stars">★★★★★</div>
+                <button class="add-btn ripple">Add to Cart</button>
+              </div>
+            </div>
+          </article>
+          <article class="dish-card" data-category="burger">
+            <img src="https://images.unsplash.com/photo-1586190848861-99aa4a171e90?auto=format&fit=crop&w=900&q=80" alt="Chicken burger" loading="lazy" />
+            <div class="dish-content">
+              <div class="dish-topline">
+                <h3>Chicken Crunch</h3>
+                <span>$10.80</span>
+              </div>
+              <p>Crunchy chicken with lettuce, tomato, and creamy dip.</p>
+              <div class="dish-meta">
+                <div class="stars">★★★★★</div>
+                <button class="add-btn ripple">Add to Cart</button>
+              </div>
+            </div>
+          </article>
+          <article class="dish-card" data-category="drinks">
+            <img src="https://images.unsplash.com/photo-1529042410759-befb1204b468?auto=format&fit=crop&w=900&q=80" alt="Refreshing drink" loading="lazy" />
+            <div class="dish-content">
+              <div class="dish-topline">
+                <h3>Cool Berry Blast</h3>
+                <span>$4.90</span>
+              </div>
+              <p>Fresh berry blend with a citrus finish.</p>
+              <div class="dish-meta">
+                <div class="stars">★★★★★</div>
+                <button class="add-btn ripple">Add to Cart</button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="offers container reveal" id="offers">
+        <div class="section-heading">
+          <p class="eyebrow">Special offers</p>
+          <h2>Limited-time deals to enjoy today</h2>
+        </div>
+        <div class="offer-grid">
+          <article class="offer-card offer-card-large">
+            <h3>50% OFF on First Order</h3>
+            <p>Use code FIRST50 on your first order and enjoy instant savings.</p>
+            <a href="#contact" class="btn btn-secondary">Claim Offer</a>
+          </article>
+          <article class="offer-card">
+            <h3>Free Delivery Above ₹499</h3>
+            <p>Order your favorites and get complimentary delivery on larger baskets.</p>
+            <div class="countdown" id="countdown">
+              <span><strong id="hours">00</strong><small>Hours</small></span>
+              <span><strong id="minutes">00</strong><small>Minutes</small></span>
+              <span><strong id="seconds">00</strong><small>Seconds</small></span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="features container reveal">
+        <div class="section-heading">
+          <p class="eyebrow">Why choose us</p>
+          <h2>We make every delivery a delight</h2>
+        </div>
+        <div class="feature-grid">
+          <article class="feature-card">
+            <i class="fas fa-truck-fast"></i>
+            <h3>Fast Delivery</h3>
+            <p>Quick dispatch and real-time updates for a seamless experience.</p>
+          </article>
+          <article class="feature-card">
+            <i class="fas fa-leaf"></i>
+            <h3>Fresh Ingredients</h3>
+            <p>Only the freshest produce and premium ingredients make it to your meal.</p>
+          </article>
+          <article class="feature-card">
+            <i class="fas fa-credit-card"></i>
+            <h3>Secure Payment</h3>
+            <p>Multiple secure payment options with instant confirmation.</p>
+          </article>
+          <article class="feature-card">
+            <i class="fas fa-star"></i>
+            <h3>Best Quality</h3>
+            <p>Every dish is prepared with care to deliver exceptional flavor.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="testimonials container reveal" id="reviews">
+        <div class="section-heading">
+          <p class="eyebrow">Customer reviews</p>
+          <h2>What our food lovers say</h2>
+        </div>
+        <div class="testimonial-slider">
+          <article class="testimonial-card active">
+            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=400&q=80" alt="Customer review" loading="lazy" />
+            <h3>Alicia R.</h3>
+            <div class="stars">★★★★★</div>
+            <p>“Amazing taste, fast delivery, and the service felt incredibly personal.”</p>
+          </article>
+          <article class="testimonial-card">
+            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=400&q=80" alt="Customer review" loading="lazy" />
+            <h3>Daniel M.</h3>
+            <div class="stars">★★★★★</div>
+            <p>“The burgers arrive hot and the packaging is neat and eco-friendly.”</p>
+          </article>
+          <article class="testimonial-card">
+            <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=400&q=80" alt="Customer review" loading="lazy" />
+            <h3>Priya S.</h3>
+            <div class="stars">★★★★★</div>
+            <p>“The app is smooth and the food quality truly stands out every time.”</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="app-section container reveal">
+        <div class="app-content">
+          <p class="eyebrow">Download the app</p>
+          <h2>Order your favorites from anywhere</h2>
+          <p>Enjoy exclusive deals, faster reorders, and live order tracking in our app.</p>
+          <div class="app-buttons">
+            <a href="#" class="store-btn"><i class="fab fa-apple"></i><span>Download on the App Store</span></a>
+            <a href="#" class="store-btn"><i class="fab fa-google-play"></i><span>Get it on Google Play</span></a>
+          </div>
+        </div>
+        <div class="phone-mockup">
+          <div class="phone-screen">
+            <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=500&q=80" alt="Food application preview" loading="lazy" />
+          </div>
+        </div>
+      </section>
+
+      <section class="contact-section container reveal" id="contact">
+        <div class="contact-card">
+          <div class="contact-form-wrap">
+            <p class="eyebrow">Contact us</p>
+            <h2>We’d love to hear from you</h2>
+            <form class="contact-form">
+              <input type="text" placeholder="Name" required />
+              <input type="email" placeholder="Email" required />
+              <input type="tel" placeholder="Phone" required />
+              <textarea placeholder="Message" rows="4" required></textarea>
+              <button type="submit" class="btn btn-primary ripple">Send Message</button>
+            </form>
+          </div>
+          <div class="map-wrap">
+            <iframe
+              title="Foodie Express location"
+              src="https://www.google.com/maps?q=New%20York%20City&z=13&output=embed"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <a class="logo" href="#home"><span>🍔</span>Foodie Express</a>
+          <p>Serving delicious food that reaches your doorstep with speed and style.</p>
+        </div>
+        <div>
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#offers">Offers</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Follow Us</h3>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+        <div>
+          <h3>Newsletter</h3>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Your email" />
+            <button type="submit" class="btn btn-primary">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Foodie Express. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <button class="back-to-top" aria-label="Back to top"><i class="fas fa-arrow-up"></i></button>
+
+    <script src="script.js"></script>
+  </body>
+</html>
